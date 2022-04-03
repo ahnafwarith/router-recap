@@ -2,7 +2,8 @@ import React from 'react';
 
 const Cart = ({ cart, removeFromCart }) => {
     // Condional Rendering
-    // 1. Using Element Variable
+    // 1. Using Element Variable and simple if-elif
+    // 2. Using ternary operator
     let command;
     if (cart.length === 0) {
         command = <p>Please select atleast one item</p>
@@ -20,7 +21,7 @@ const Cart = ({ cart, removeFromCart }) => {
             {
                 cart.map(tshirt => <p>{tshirt.name}<button onClick={() => removeFromCart(tshirt)}>X</button></p>)
             }
-
+            {cart.length !== 4 ? <p>Keep Adding</p> : <button>Clear All</button>}
         </div>
     );
 };
