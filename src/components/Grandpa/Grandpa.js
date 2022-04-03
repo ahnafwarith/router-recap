@@ -5,13 +5,14 @@ import Uncle from '../Uncle/Uncle';
 import './Grandpa.css'
 
 const Grandpa = () => {
+    const house = 10
     return (
         <div className='grandpa'>
             <h1>Grandpa</h1>
             <div className="kids">
-                <Father></Father>
-                <Aunt></Aunt>
-                <Uncle></Uncle>
+                <Father house={house}></Father>
+                <Aunt house={house}></Aunt>
+                <Uncle house={house}></Uncle>
             </div>
         </div>
     );
