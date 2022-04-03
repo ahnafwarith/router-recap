@@ -10,13 +10,14 @@ const Grandpa = () => {
         const newHouse = house + 1;
         setHouse(newHouse)
     }
+    const ornament = 'diamond-ring'
     return (
         <div className='grandpa'>
             <h1>Grandpa</h1>
             <p>{house}</p>
             <button onClick={increaseHouse}>Buy House</button>
             <div className="kids">
-                <Father house={house}></Father>
+                <Father house={house} ornament={ornament}></Father>
                 <Aunt house={house}></Aunt>
                 <Uncle house={house}></Uncle>
             </div>
