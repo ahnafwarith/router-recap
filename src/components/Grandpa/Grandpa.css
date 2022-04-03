@@ -9,6 +9,10 @@
     border: 1px solid goldenrod;
 }
 
+.container {
+    border: 5px gray solid;
+}
+
 .kidsOfF {
     border: 1px solid red;
     display: flex;

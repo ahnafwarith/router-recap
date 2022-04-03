@@ -5,7 +5,7 @@ import '../Grandpa/Grandpa.css'
 
 const Father = ({ house, ornament }) => {
     return (
-        <div>
+        <div className='container'>
             <h1>Father</h1>
             <p>{house}</p>
             <div className='kidsOfF'>
